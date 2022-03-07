@@ -48,7 +48,7 @@ namespace Catalog.API.Controllers
             if (product == null)
             {
                 _logger.LogError($"Product with id {id}, not found");
-                return NotFound();
+                return NotFound();  
             }
 
             return Ok(product);
@@ -91,8 +91,8 @@ namespace Catalog.API.Controllers
         [ProducesResponseType(typeof(IEnumerable<Product>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<Product>>> CreateProduct([FromBody] Product product)
         {
-            await _repository.CreateProduct(product);
-            return CreatedAtRoute("GetProduct", new { id = product.Id }, product);
+             await _repository.CreateProduct(product);
+            return CreatedAtRoute("GetProduct", new { id = product.Id}, product);
         }
 
         /// <summary>
