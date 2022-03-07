@@ -13,11 +13,13 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{B25ECC27-AA14-4F7B-BB7A-DF090DE232A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.API", "Services\Basket\Basket.API\Basket.API.csproj", "{746DD087-1AE8-4114-B90F-8EBE99A346D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basket.API", "Services\Basket\Basket.API\Basket.API.csproj", "{746DD087-1AE8-4114-B90F-8EBE99A346D3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{5E8E6479-4021-4E2A-855C-697185EC5776}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discount.API", "Services\Discount\Discount.API\Discount.API.csproj", "{282EF27E-E949-4102-BD00-D641AE1610DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount.API", "Services\Discount\Discount.API\Discount.API.csproj", "{282EF27E-E949-4102-BD00-D641AE1610DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discount.Grpc", "Services\Discount\Discount.Grpc\Discount.Grpc.csproj", "{066C358D-459B-4F58-975A-E75677056BA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{282EF27E-E949-4102-BD00-D641AE1610DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{282EF27E-E949-4102-BD00-D641AE1610DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{282EF27E-E949-4102-BD00-D641AE1610DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066C358D-459B-4F58-975A-E75677056BA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066C358D-459B-4F58-975A-E75677056BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066C358D-459B-4F58-975A-E75677056BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066C358D-459B-4F58-975A-E75677056BA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{746DD087-1AE8-4114-B90F-8EBE99A346D3} = {B25ECC27-AA14-4F7B-BB7A-DF090DE232A4}
 		{5E8E6479-4021-4E2A-855C-697185EC5776} = {3437D867-39BA-42B5-8A1C-95825CE01BDD}
 		{282EF27E-E949-4102-BD00-D641AE1610DA} = {5E8E6479-4021-4E2A-855C-697185EC5776}
+		{066C358D-459B-4F58-975A-E75677056BA7} = {5E8E6479-4021-4E2A-855C-697185EC5776}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DACB6ABF-8603-4535-8F56-BDB54C3445AC}
