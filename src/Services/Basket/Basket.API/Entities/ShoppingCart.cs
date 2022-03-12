@@ -16,9 +16,9 @@ namespace Basket.API.Entities
         {
             this.UserName = userName;
         }
-        public decimal TotalPrice()
+        public decimal TotalPrice
         {
-            return Items?.Select(s => s.Price * s.Quantity)?.Sum() ?? 0;
+            get { return this?.Items?.Sum(s => s.Price * s.Quantity) ?? 0; }
         }
     }
 }
